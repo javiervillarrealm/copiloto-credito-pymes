@@ -1,0 +1,100 @@
+{
+  "n_solicitudes": 5000,
+  "tasa_incumplimiento_pct": 17.6,
+  "n_entrenamiento": 4000,
+  "n_prueba": 1000,
+  "faltantes_pct": {
+    "puntualidad_pago_proveedores_pct": 0.0,
+    "ratio_endeudamiento": 0.0,
+    "antiguedad_negocio_anios": 0.0,
+    "variabilidad_flujo_cv": 2.6,
+    "ventas_anuales_mxn": 0.0,
+    "concentracion_clientes_top3": 64.9
+  },
+  "mejores_hiperparametros": {
+    "max_depth": 3,
+    "learning_rate": 0.01,
+    "n_estimators": 500,
+    "subsample": 0.9,
+    "colsample_bytree": 0.7
+  },
+  "scale_pos_weight": 4.67,
+  "auc_cv_xgb": 0.738,
+  "auc_cv_xgb_std": 0.024,
+  "auc_cv_logistica": 0.747,
+  "auc_cv_logistica_std": 0.021,
+  "auc_test_xgb": 0.745,
+  "auc_test_logistica": 0.75,
+  "ks": 39.6,
+  "umbral": 0.525,
+  "brier": 0.126,
+  "matriz_confusion": {
+    "VN": 626,
+    "FP": 198,
+    "FN": 64,
+    "VP": 112
+  },
+  "importancia_shap_pct": {
+    "Puntualidad de pago a proveedores": 34.0,
+    "Ratio de endeudamiento": 27.4,
+    "Antigüedad del negocio": 21.6,
+    "Variabilidad del flujo (CFDI)": 11.3,
+    "Ventas anuales (CFDI)": 4.5,
+    "Concentración de clientes": 1.2
+  },
+  "prueba_valor": {
+    "tasa_rechazo_pct": 31.0,
+    "aprobaciones_correctas_modelo_pct": 90.7,
+    "aprobaciones_correctas_manual_pct": 85.4,
+    "incumplimientos_detectados_modelo_pct": 63.6,
+    "incumplimientos_detectados_manual_pct": 42.6
+  },
+  "top5_busqueda": [
+    {
+      "subsample": 0.9,
+      "n_estimators": 500,
+      "max_depth": 3,
+      "learning_rate": 0.01,
+      "colsample_bytree": 0.7,
+      "auc_cv_media": 0.7382,
+      "auc_cv_std": 0.0236
+    },
+    {
+      "subsample": 1.0,
+      "n_estimators": 300,
+      "max_depth": 3,
+      "learning_rate": 0.02,
+      "colsample_bytree": 0.7,
+      "auc_cv_media": 0.7359,
+      "auc_cv_std": 0.0256
+    },
+    {
+      "subsample": 1.0,
+      "n_estimators": 300,
+      "max_depth": 3,
+      "learning_rate": 0.01,
+      "colsample_bytree": 0.8,
+      "auc_cv_media": 0.7353,
+      "auc_cv_std": 0.025
+    },
+    {
+      "subsample": 1.0,
+      "n_estimators": 500,
+      "max_depth": 3,
+      "learning_rate": 0.02,
+      "colsample_bytree": 0.9,
+      "auc_cv_media": 0.7317,
+      "auc_cv_std": 0.0207
+    },
+    {
+      "subsample": 0.7,
+      "n_estimators": 400,
+      "max_depth": 4,
+      "learning_rate": 0.02,
+      "colsample_bytree": 0.8,
+      "auc_cv_media": 0.7314,
+      "auc_cv_std": 0.0223
+    }
+  ],
+  "segundos": 89.3
+}

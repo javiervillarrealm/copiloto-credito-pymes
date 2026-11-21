@@ -1,0 +1,30 @@
+{
+  "modelo": "XGBoost monotónico (Parte 2)",
+  "hiperparametros": {
+    "max_depth": 6,
+    "learning_rate": 0.01,
+    "n_estimators": 300,
+    "subsample": 0.8,
+    "colsample_bytree": 0.9
+  },
+  "monotonic": "(-1,1,-1,1,-1,1)",
+  "scale_pos_weight": 4.67,
+  "umbral_rechazo": 0.5303,
+  "umbral_revisar": 0.4486,
+  "auc_prueba": 0.75,
+  "ks": 39.1,
+  "medianas": {
+    "puntualidad_pago_proveedores_pct": 80.0,
+    "ratio_endeudamiento": 0.37,
+    "antiguedad_negocio_anios": 5.1,
+    "variabilidad_flujo_cv": 0.401,
+    "ventas_anuales_mxn": 6065000.0,
+    "concentracion_clientes_top3": 0.424
+  },
+  "contactos_demo": {
+    "1809": "Héctor Ramírez Cruz"
+  },
+  "nombres_demo": {
+    "1809": "Taller de manufactura Ramírez"
+  }
+}
